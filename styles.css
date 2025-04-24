@@ -4,7 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url('assets/kids-enjoying-the-sunset-silhouettes-full-of-freedom-and-happiness-free-photo.jpg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This ensures the image doesn’t repeat */
 }
+
 
 header {
     background: #333;
