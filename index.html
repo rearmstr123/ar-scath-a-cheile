@@ -4,67 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ar Scáth A Chéile - Project Proposal</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900">
+
     <!-- Hero Section -->
-    <header id="hero">
-        <h1>Ar Scáth A Chéile a Mhaireann na Daoine</h1>
-        <p>How can dance be used to revitalize archived Irish folklore?</p>
+    <header id="hero" class="bg-blue-600 text-white py-20 text-center">
+        <h1 class="text-4xl font-bold mb-4">Ar Scáth A Chéile a Mhaireann na Daoine</h1>
+        <p class="text-xl">How can dance be used to revitalize archived Irish folklore?</p>
     </header>
     
-
     <!-- Project Description Section -->
-    <section id="description">
-        <h2>Project Overview</h2>
-        <p>This project aims to revitalize Irish folklore through dance. Choreography workshops with primary school children will result in performances at Luan Gallery, Athlone, Ireland. Children will create shadow dances inspired by stories from the Dúchas Schools Collection.</p>
-        <p>The project will transform archived Irish folklore into living, performative art, combining movement, spoken word, and visual art installations.</p>
+    <section id="description" class="py-16 px-4 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-6">Project Overview</h2>
+        <p class="text-lg mb-4">This project aims to revitalize Irish folklore through dance. Choreography workshops with primary school children will result in performances at Luan Gallery, Athlone, Ireland. Children will create shadow dances inspired by stories from the Dúchas Schools Collection.</p>
+        <p class="text-lg">The project will transform archived Irish folklore into living, performative art, combining movement, spoken word, and visual art installations.</p>
     </section>
 
     <!-- Blog Posts Section -->
-    <section id="blog-posts">
-        <h2>Latest Blog Posts</h2>
-        <div class="blog-post">
-            <h3><a href="post1.html">The Role of Performance in Living Heritage</a></h3>
-            <p>Explore how dance as a medium can transform archived Irish folklore into a living tradition.</p>
-        </div>
-        <div class="blog-post">
-            <h3><a href="post2.html">Choreography Workshops with Irish School Children</a></h3>
-            <p>A closer look at the workshops planned for primary school children, aimed at creating original shadow dance works.</p>
-        </div>
-        <div class="blog-post">
-            <h3><a href="post3.html">The Dúchas Schools Collection and its Legacy</a></h3>
-            <p>The history of the Dúchas Schools Collection and how it shapes contemporary Irish heritage practices.</p>
-        </div>
-        <div class="blog-post">
-            <h3><a href="post4.html">Luan Gallery: The Perfect Space for Our Project</a></h3>
-            <p>Why Luan Gallery is the ideal venue for the project and its connection to local heritage.</p>
-        </div>
-        <div class="blog-post">
-            <h3><a href="post5.html">Connecting Communities Through Folklore and Dance</a></h3>
-            <p>How this project bridges the gap between historical folklore and modern performance art.</p>
+    <section id="blog-posts" class="py-16 bg-white">
+        <h2 class="text-3xl font-semibold text-center mb-6">Latest Blog Posts</h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+            <div class="blog-post bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold"><a href="post1.html" class="text-blue-600 hover:underline">The Role of Performance in Living Heritage</a></h3>
+                <p class="text-gray-700 mt-2">Explore how dance as a medium can transform archived Irish folklore into a living tradition.</p>
+            </div>
+            <div class="blog-post bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold"><a href="post2.html" class="text-blue-600 hover:underline">Choreography Workshops with Irish School Children</a></h3>
+                <p class="text-gray-700 mt-2">A closer look at the workshops planned for primary school children, aimed at creating original shadow dance works.</p>
+            </div>
+            <div class="blog-post bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold"><a href="post3.html" class="text-blue-600 hover:underline">The Dúchas Schools Collection and its Legacy</a></h3>
+                <p class="text-gray-700 mt-2">The history of the Dúchas Schools Collection and how it shapes contemporary Irish heritage practices.</p>
+            </div>
+            <div class="blog-post bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold"><a href="post4.html" class="text-blue-600 hover:underline">Luan Gallery: The Perfect Space for Our Project</a></h3>
+                <p class="text-gray-700 mt-2">Why Luan Gallery is the ideal venue for the project and its connection to local heritage.</p>
+            </div>
+            <div class="blog-post bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold"><a href="post5.html" class="text-blue-600 hover:underline">Connecting Communities Through Folklore and Dance</a></h3>
+                <p class="text-gray-700 mt-2">How this project bridges the gap between historical folklore and modern performance art.</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you have any questions or want to get involved, please reach out:</p>
-        <form action="submit_form.php" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+    <section id="contact" class="py-16 px-4 bg-gray-100">
+        <h2 class="text-3xl font-semibold text-center mb-6">Contact</h2>
+        <p class="text-lg text-center mb-4">If you have any questions or want to get involved, please reach out:</p>
+        <form action="submit_form.php" method="post" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+            <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 mb-4 border border-gray-300 rounded">
+            <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 mb-4 border border-gray-300 rounded">
+            <textarea name="message" placeholder="Your Message" required class="w-full p-3 mb-4 border border-gray-300 rounded"></textarea>
+            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Send Message</button>
         </form>
     </section>
 
     <!-- GitHub Login -->
-    <section id="github-login">
-        <h2>Login with GitHub</h2>
-        <button onclick="loginWithGitHub()">Login with GitHub</button>
+    <section id="github-login" class="py-16 text-center bg-gray-50">
+        <h2 class="text-3xl font-semibold mb-6">Login with GitHub</h2>
+        <button onclick="loginWithGitHub()" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900">Login with GitHub</button>
     </section>
 
-    <footer>
+    <footer class="py-8 text-center bg-gray-800 text-white">
         <p>&copy; 2025 Ar Scáth A Chéile. All rights reserved.</p>
     </footer>
 
