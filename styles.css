@@ -12,9 +12,10 @@ header {
     padding: 50px 0;
     text-align: center;
     background-image: url('assets/photo-shadow-wall-1611564742300-d744acdfba4a.avif');
-    background-size: cover; /* This ensures the image covers the entire background of the header */
-    background-position: center; /* This centers the image */
-    background-repeat: no-repeat; /* This ensures the image doesn’t repeat */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid green;
 }
 
 header h1 {
