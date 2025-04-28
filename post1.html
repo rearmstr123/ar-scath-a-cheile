@@ -3,112 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reenactment of Heritage: Connecting Communities Through Folklore and Movement</title>
-  
+    <title>The Dúchas Schools Collection and its Legacy</title>
+      
     <!-- Tailwind CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   
     <!-- Custom Font and Smooth Scrolling -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
+        /* Global Body Styles */
         body {
             font-family: 'EB Garamond', serif;
+            line-height: 1.6;
+            background-color: #fcefef;
+            color: #333;
+            padding: 0 20px;
         }
-        /* Adding background image to the header */
+
         header {
-            background-image: url('assets/photo-tunnel-shadow-1732316408848-248c95e52647.avif'); /* Update with your background image URL */
+            background-image: url('assets/sunlit-forest-shadows-stockcake.jpg'); /* Update with your background image URL */
             background-size: cover;
             background-position: center;
             padding: 4rem 0; /* Adjust padding as needed */
             color: white;
-            position: relative;
-        }
-        /* Adding a dark overlay for better readability */
-        header .overlay {
-            position: absolute;
-            inset: 0;
-            background-color: black;
-            opacity: 0.5; /* Adjust opacity for contrast */
-            z-index: 1;
         }
 
-        /* Header Title Styling */
-        h1 {
-            font-size: 3rem; /* Adjust font size for balance */
-            font-weight: 600;
-            z-index: 2; /* Ensure title is above overlay */
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for clarity */
+        /* Paragraph and text styles */
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.75;
+        }
+
+        /* Styling for figures and captions */
+        figure {
+            text-align: center;
             margin: 0;
         }
 
-        /* Return to Home Link */
-        a.home-link {
-            font-size: 1.2em;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-            display: inline-block;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 2;
+        figcaption {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
         }
 
-        a.home-link:hover {
-            text-decoration: underline;
+        /* Flexbox for the image row */
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 20px;
         }
 
-        /* Post content styling */
-        .post-content {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
+        .image-container {
+            flex: 1;
         }
 
         .post-image {
-            max-width: 80%;
+            width: 100%;
             height: auto;
-            margin: 20px 0;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Reference list section */
+        /* Reference List Section */
         .reference-list {
-            margin-top: 40px;
-            font-size: 1.1em;
-            color: #444;
+            margin-top: 30px;
         }
 
-        .reference-list li {
+        .reference-list h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
             margin-bottom: 10px;
         }
 
-        /* Footer styling */
+        .reference-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .reference-list li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .reference-list a {
+            text-decoration: none;
+            color: #0077cc;
+        }
+
+        .reference-list a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
-            padding: 10px 0;
-            font-size: 0.9em;
-            background-color: #f1f1f1;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="relative text-center">
-        <!-- Dark overlay for better legibility -->
-        <div class="overlay"></div>
-        <!-- Header Title -->
-        <h1>Reenactment of Heritage: Connecting Communities Through Folklore and Movement</h1>
-        <!-- Return to Home link -->
-        <a href="index.html" class="home-link">Return to Homepage</a>
+<body>
+
+    <header class="relative text-center"></headerclass>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <h1 class="text-4xl font-semibold text-white relative z-10">The Dúchas.ie ‘School’s Collection’ and its Legacy</h1>
+        <a href="index.html" class="text-xl font-semibold text-white absolute top-4 left-4 hover:underline">Return to Home</a>
     </header>
 
     <section class="post-content">
