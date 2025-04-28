@@ -3,17 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connecting Communities Through Folklore and Dance</title>
+    <title>Ar Scáth A Chéile - Luan Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Header Section */
+        header {
+            background-image: url('assets/photo-tunnel-shadow-1732316408848-248c95e52647.avif');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 250px; /* Adjusted height for more space */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px; /* Increased padding for better text positioning */
+            position: relative;
+        }
+
+        /* Dark overlay for better contrast */
+        header .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: black;
+            opacity: 0.7; /* Increased opacity for better contrast */
+            z-index: 1; /* Ensure overlay stays under the text */
+        }
+
+        /* Header Title */
+        h1 {
+            font-size: 3rem; /* Adjusted size for better balance */
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for clarity */
+            z-index: 2; /* Ensure text is on top of the overlay */
+            color: #fff;
+        }
+
+        /* Return to Home Link */
+        a.home-link {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2; /* Ensure it stays above the overlay */
+        }
+
+        a.home-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Post content styling */
+        .post-content {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+
+        /* Style for the images */
+        .post-image {
+            max-width: 100%;  /* Adjusted to make the images proportionate */
+            height: auto;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Reference list section */
+        .reference-list {
+            margin-top: 40px;
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        .reference-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px 0;
+            font-size: 0.9em;
+            background-color: #f1f1f1;
+        }
+
+        /* Style for the "Return to Home" link */
+        .home-link {
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #007bff;
+            padding: 10px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the image captions */
+        figure {
+            text-align: center;
+            margin: 0;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Connecting Communities Through Folklore and Dance</h1>
+<body class="bg-gray-100 text-gray-900">
+    <header class="relative text-center">
+        <!-- Dark overlay for better legibility -->
+        <div class="absolute inset-0 bg-black opacity-60"></div> <!-- Increased opacity -->
+        <!-- Header Title -->
+        <h1 class="text-4xl font-semibold text-white relative z-10">Ar Scáth A Chéile at Luan Gallery</h1>
+        <!-- Return to Home link -->
+        <a href="index.html" class="text-xl font-semibold text-white absolute top-4 left-4 hover:underline">Return to Homepage</a>
     </header>
+
     <section class="post-content">
-        <p>Here you will describe your blog post content. This could include insights about the project, theoretical background, etc.</p>
+        <p><strong>Project Description and Location: Luan Gallery</strong></p>
+        <p>The <strong>Ar Scáth A Chéile</strong> project will be showcased at the municipal Luan Gallery in Athlone. It begins with a live evening showcase where students from local primary schools perform shadow reenactments. Following the opening event, a two-month-long exhibition will be held, featuring English and Irish language video recordings of children’s shadow performances, textual documents sourced from <a href="https://www.duchas.ie" target="_blank">duchas.ie</a>, audio recordings of children storytelling, and written reflections from workshops with the schoolchildren. This exhibition will be free to the public, while the live opening performance will be ticketed to ensure safe capacity management.</p>
+
+        <figure>
+            <img src="assets/luan_gallery.jpg" alt="Exterior view of Luan Gallery" class="post-image">
+            <figcaption>Exterior view of Luan Gallery in Athlone, showcasing its historic architecture.</figcaption>
+        </figure>
+
+        <p><strong>Why Luan Gallery?</strong> The gallery is an ideal venue because of its:</p>
+        <ul>
+            <li><strong>Deep ties to local heritage and community engagement</strong></li>
+            <li><strong>Free public exhibitions and multi-month exhibition model</strong></li>
+            <li><strong>Historic setting:</strong> The gallery itself is a renovated local mill, situated on the historic side of the town overlooking the River Shannon next to notable landmarks such as Athlone Castle and St. Peter & Paul's Church.</li>
+            <li><strong>Accessibility:</strong> The venue is within walking distance of several primary schools in the area. Its proximity to the greenway and newly built footbridge ensures visibility and accessibility.</li>
+        </ul>
+
+        <figure>
+            <img src="assets/luan_gallery_interior_corridor.jpg" alt="Interior corridor of Luan Gallery" class="post-image">
+            <figcaption>Interior view of the corridor at Luan Gallery, providing space for children's artworks.</figcaption>
+        </figure>
+
+        <p>Additionally, the Luan Gallery frequently incorporates local artists' work into their exhibitions, which aligns well with the community-centred vision of <strong>Ar Scáth A Chéile</strong> (Luan Gallery - exhibiting both national and international visual art projects in Athlone, 2025).</p>
+
+        <p><strong>Theoretical Framework</strong></p>
+        <p>Carol Duncan’s (1995) concept of museums as ritual structures describes how, beyond serving as a vessel for products of art or architecture, museums are complex entities which prompt visitors to participate in a type of museum-going ritual. The shadow performances reenacting local folklore create a dialogue between the lived experiences of the young performers and the histories they engage with. Acknowledging Duncan’s idea about the potential impact of a museum on its visitors, this interaction is further deepened by the choice of a local gallery, which grounds the reenactments in a venue that remains intimately connected to the community’s own heritage. As the performers and the stories are rooted in the locality, it is most suitable for situating the project in a space that reflects and strengthens this connection.</p>
+
+        <figure>
+            <img src="assets/luan_gallery_mainshowroom.jpg" alt="Main showroom of Luan Gallery" class="post-image">
+            <figcaption>The main showroom of Luan Gallery, where shadow performances will be projected throughout the exhibition.</figcaption>
+        </figure>
+
+        <p><strong>The Gallery Space</strong></p>
+        <p>The gallery’s structure perfectly supports the needs of this project. It comprises two main rooms. One large room with a high ceiling is ideal for the live shadow performance during the opening event. This space will be used to continuously project recorded versions of the performances throughout the exhibition. The second room will exhibit digitised folktales in manuscript and transcribed formats from <a href="https://www.duchas.ie" target="_blank">Dúchas.ie</a>, and listening stations with headphones where visitors can listen to children’s recordings of tales. A narrow glass-walled corridor on the riverside will showcase children’s drawings and written responses produced during the workshops, visually connecting the exhibition to the surrounding local landscape.</p>
+
+        <p><strong>Live Performance Details</strong></p>
+        <p>The main large room of the gallery measures approximately 90-100 square metres in size. While the space could technically accommodate up to 100 people tightly seated, allowing space for the performance area would bring audience numbers to 50-60 for a comfortable live event. To manage audience flow and maintain an intimate setting, performances will be scheduled according to school, with separate tickets available for each school’s live event. Each school’s performance will involve 25-30 children, running for approximately 45 minutes, after which the audience will be invited to a reception and exhibition viewing in the adjoining gallery space. The next school’s performance will begin 15 minutes later.</p>
+
+        <p>The target audience includes both local residents of and tourists visiting Athlone, particularly targeting families and school communities involved in co-creating the project.</p>
+
+        <p><strong>Future Potential</strong></p>
+        <p>This project is designed for scalability and can be adapted for municipal galleries or community centres across Ireland, further extending its reach and impact.</p>
+
+        <section class="reference-list">
+            <h3>Reference List</h3>
+            <ul>
+                <li>Duncan, C. (1995) <i>Civilizing Rituals: Inside Public Art Museums</i>. Oxford, UNITED KINGDOM: Taylor & Francis Group. Available at: <a href="http://ebookcentral.proquest.com/lib/roehampton-ebooks/detail.action?docID=240291" target="_blank">http://ebookcentral.proquest.com/lib/roehampton-ebooks/detail.action?docID=240291</a> (Accessed: 18 February 2025).</li>
+                <li>Luan Gallery - exhibiting both national and international visual art projects in Athlone (2025). Available at: <a href="http://www.athloneartsandtourism.ie/luan-gallery/" target="_blank">http://www.athloneartsandtourism.ie/luan-gallery/</a> (Accessed: 28 April 2025).</li>
+            </ul>
+        </section>
     </section>
+
     <footer>
+        <!-- Link to return to the homepage at the bottom -->
+        <a href="index.html" class="home-link">Return to Homepage</a>
         <p>&copy; 2025 Ar Scáth A Chéile. All rights reserved.</p>
     </footer>
 </body>
