@@ -17,29 +17,48 @@
     body {
       font-family: 'EB Garamond', serif;
     }
+
+   .fade-in {
+      animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
   </style>
 </head>
 <body class="bg-green-50 text-green-900">
 
   <!-- Hero Section -->
-  <header
-    class="relative h-screen bg-black text-white overflow-hidden"
-    style="background-image: url('assets/photo-tunnel-shadow-1732316408848-248c95e52647.avif'); background-size: cover; background-position: center;">
-    
-    <!-- Overlay for contrast -->
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <header class="relative flex flex-col justify-between px-6 py-10">
+    <div class="overlay"></div>
 
-    <!-- Text content -->
-    <div class="relative z-10 flex flex-col justify-between h-full px-6 py-10">
-      <div class="text-right">
-        <h2 class="text-lg md:text-2xl font-light">Performance of Heritage Project</h2>
-      </div>
-      <div>
-        <h1 class="text-4xl md:text-6xl font-bold text-center">Ar Scáth A Chéile</h1>
-      </div>
-      <div class="text-left max-w-md">
-        <blockquote class="italic text-lg md:text-xl">"Ar Scáth A Chéile a Mhaireann na Daoine" - Irish Proverb</blockquote>
-      </div>
+    <!-- Top Right Heading -->
+    <div class="relative z-10 text-right">
+      <h2 class="text-lg md:text-2xl font-light">Performance of Heritage Project</h2>
+    </div>
+
+    <!-- Centered Title -->
+    <div class="relative z-10 text-center mt-auto mb-auto">
+      <h1 class="text-4xl md:text-6xl font-bold fade-in">Ar Scáth A Chéile</h1>
+      <p class="mt-2 text-lg md:text-2xl italic opacity-90">/ar skɑː ə ˈçeːlʲə/</p>
+      <p class="mt-1 text-md md:text-xl opacity-80">In each other's shadow</p>
+    </div>
+
+    <!-- Bottom Left Proverb -->
+    <div class="relative z-10 text-left max-w-md">
+      <blockquote class="italic text-lg md:text-xl mb-1">
+        "Ar Scáth A Chéile a Mhaireann na Daoine"
+      </blockquote>
+      <p class="italic text-md md:text-lg opacity-80">
+        "People live in each other's shadow."
+      </p>
     </div>
   </header>
 
@@ -114,8 +133,6 @@
         </div>
       </div>
       
-
-
 
       <!-- Post 3 -->
       <div class="flex flex-col md:flex-row items-center border-b border-green-300 pb-8 gap-6">
