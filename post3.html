@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Role of Performance in the Irish Oral Tradition</title>
+    <title>Reenactment of Heritage: Connecting Communities through Folklore and Movement</title>
   
     <!-- Tailwind CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -17,17 +17,22 @@
         }
         body {
             font-family: 'EB Garamond', serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
         }
         /* Adding background image to the header */
         header {
-            background-image: url('assets/sunlit-forest-shadows-stockcake.jpg'); /* Update with your background image URL */
+            background-image: url('assets/sunlit-forest-shadows-stockcake.jpg');
             background-size: cover;
             background-position: center;
-            padding: 4rem 0; /* Adjust padding as needed */
+            padding: 4rem 0;
             color: white;
         }
 
-        /* Return to Home Link */
+        /* Return to Home Link - Header */
         a.home-link {
             font-size: 1.2em;
             font-weight: bold;
@@ -38,7 +43,7 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            z-index: 2; /* Ensure it stays above the overlay */
+            z-index: 2;
         }
 
         a.home-link:hover {
@@ -47,28 +52,18 @@
 
         /* Post content styling */
         .post-content {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            font-size: 1.1em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Style for the images to ensure they are proportionate */
-        .post-image {
-            max-width: 80%;  /* Adjusted to make the images smaller */
-            height: auto;
-            margin: 20px 0;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Style for the content section */
-        .post-content {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
+        /* Spacing for paragraphs */
+        .post-content p {
+            margin-bottom: 1.5rem;
         }
 
         /* Reference list section */
@@ -86,23 +81,23 @@
         footer {
             text-align: center;
             margin-top: 40px;
-            padding: 10px 0;
+            padding: 20px 0;
             font-size: 0.9em;
             background-color: #f1f1f1;
         }
 
-        /* Style for the "Return to Home" link */
-        .home-link {
+        /* Footer Link */
+        footer a.home-link {
             font-size: 1.1em;
             font-weight: bold;
             text-decoration: none;
             color: #007bff;
             padding: 10px;
             display: inline-block;
-            margin: 10px 0;
+            margin-top: 20px;
         }
 
-        .home-link:hover {
+        footer a.home-link:hover {
             text-decoration: underline;
         }
 
@@ -119,16 +114,18 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-100 text-gray-900">
+
     <header class="relative text-center">
         <!-- Background overlay for better legibility -->
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <!-- Header Title -->
         <h1 class="text-4xl font-semibold text-white relative z-10">Reenactment of Heritage: Connecting Communities Through Folklore and Movement</h1>
-        <!-- Return to Home link -->
-        <a href="index.html" class="text-xl font-semibold text-white absolute top-4 left-4 hover:underline">Return to Home</a>
+        <!-- Return to Home link (Header) -->
+        <a href="index.html" class="home-link">Return to Home</a>
     </header>
-    
+
     <section class="post-content">
         <p>The Ar Scáth A Chéile project seeks to reenact folklore rooted in the ancient Irish oral tradition by bridging historical processes of knowledge transmission and documentation with contemporary, performative and community-driven participatory practices. Through reenactment of folklore, the project offers a way to negotiate the relationship between documentation and artistic production. Moreover, beyond techniques of “reconstruction” and “restoration” which tend to be fixated on the past, reenactment situates itself in the present and invites more affective and personal experiences for those involved.</p>
 
@@ -149,9 +146,12 @@
     </section>
 
     <footer>
-        <!-- Link to return to the homepage at the bottom -->
+        <!-- Return to Homepage Link (Footer) -->
         <a href="index.html" class="home-link">Return to Homepage</a>
         <p>&copy; 2025 Ar Scáth A Chéile. All rights reserved.</p>
     </footer>
+
 </body>
+
 </html>
+
