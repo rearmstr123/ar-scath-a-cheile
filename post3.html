@@ -4,40 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reenactment of Heritage: Connecting Communities Through Folklore and Movement</title>
-    <link rel="stylesheet" href="styles.css">
+  
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+    <!-- Custom Font and Smooth Scrolling -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Header Section */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'EB Garamond', serif;
+        }
+        /* Adding background image to the header */
         header {
-            background-image: url('assets/photo-tunnel-shadow-1732316408848-248c95e52647.avif');
+            background-image: url('assets/photo-tunnel-shadow-1732316408848-248c95e52647.avif'); /* Update with your background image URL */
             background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 250px; /* Adjusted height for more space */
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 30px; /* Increased padding for better text positioning */
+            background-position: center;
+            padding: 4rem 0; /* Adjust padding as needed */
+            color: white;
             position: relative;
         }
-
-        /* Dark overlay for better contrast */
+        /* Adding a dark overlay for better readability */
         header .overlay {
             position: absolute;
             inset: 0;
             background-color: black;
-            opacity: 0.7; /* Increased opacity for better contrast */
-            z-index: 1; /* Ensure overlay stays under the text */
+            opacity: 0.5; /* Adjust opacity for contrast */
+            z-index: 1;
         }
 
-        /* Header Title */
+        /* Header Title Styling */
         h1 {
-            font-size: 2.5rem; /* Adjusted size for better balance */
-            font-weight: 700;
+            font-size: 3rem; /* Adjust font size for balance */
+            font-weight: 600;
+            z-index: 2; /* Ensure title is above overlay */
+            color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for clarity */
-            z-index: 2; /* Ensure text is on top of the overlay */
-            color: #fff;
             margin: 0;
         }
 
@@ -46,13 +50,13 @@
             font-size: 1.2em;
             font-weight: bold;
             text-decoration: none;
-            color: #fff;
+            color: white;
             padding: 10px;
             display: inline-block;
             position: absolute;
             top: 20px;
             left: 20px;
-            z-index: 2; /* Ensure it stays above the overlay */
+            z-index: 2;
         }
 
         a.home-link:hover {
@@ -67,22 +71,13 @@
             color: #333;
         }
 
-        /* Style for the images to ensure they are proportionate */
         .post-image {
-            max-width: 80%;  /* Adjusted to make the images smaller */
+            max-width: 80%;
             height: auto;
             margin: 20px 0;
             display: block;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        /* Style for the content section */
-        .post-content {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
         }
 
         /* Reference list section */
@@ -104,39 +99,12 @@
             font-size: 0.9em;
             background-color: #f1f1f1;
         }
-
-        /* Style for the "Return to Home" link */
-        .home-link {
-            font-size: 1.1em;
-            font-weight: bold;
-            text-decoration: none;
-            color: #007bff;
-            padding: 10px;
-            display: inline-block;
-            margin: 10px 0;
-        }
-
-        .home-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Style for the image captions */
-        figure {
-            text-align: center;
-            margin: 0;
-        }
-
-        figcaption {
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header class="relative text-center">
         <!-- Dark overlay for better legibility -->
-        <div class="overlay"></div> <!-- Dark overlay with opacity for contrast -->
+        <div class="overlay"></div>
         <!-- Header Title -->
         <h1>Reenactment of Heritage: Connecting Communities Through Folklore and Movement</h1>
         <!-- Return to Home link -->
@@ -156,9 +124,9 @@
         </section>
     </section>
 
-    <footer>
+    <footer class="bg-blue-900 text-white py-4 text-center">
         <!-- Link to return to the homepage at the bottom -->
-        <a href="index.html" class="home-link">Return to Homepage</a>
+        <a href="index.html" class="text-white hover:text-gray-300 transition duration-300">Return to Home</a>
         <p>&copy; 2025 Ar Scáth A Chéile. All rights reserved.</p>
     </footer>
 </body>
