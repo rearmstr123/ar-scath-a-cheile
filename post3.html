@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reenactment of Heritage: Connecting Communities Through Folklore and Movement</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Role of Performance in the Irish Oral Tradition</title>
   
     <!-- Tailwind CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -19,30 +20,11 @@
         }
         /* Adding background image to the header */
         header {
-            background-image: url('assets/photo-tunnel-shadow-1732316408848-248c95e52647.avif'); /* Update with your background image URL */
+            background-image: url('assets/sunlit-forest-shadows-stockcake.jpg'); /* Update with your background image URL */
             background-size: cover;
             background-position: center;
             padding: 4rem 0; /* Adjust padding as needed */
             color: white;
-            position: relative;
-        }
-        /* Adding a dark overlay for better readability */
-        header .overlay {
-            position: absolute;
-            inset: 0;
-            background-color: black;
-            opacity: 0.5; /* Adjust opacity for contrast */
-            z-index: 1;
-        }
-
-        /* Header Title Styling */
-        h1 {
-            font-size: 3rem; /* Adjust font size for balance */
-            font-weight: 600;
-            z-index: 2; /* Ensure title is above overlay */
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for clarity */
-            margin: 0;
         }
 
         /* Return to Home Link */
@@ -50,13 +32,13 @@
             font-size: 1.2em;
             font-weight: bold;
             text-decoration: none;
-            color: white;
+            color: #fff;
             padding: 10px;
             display: inline-block;
             position: absolute;
             top: 20px;
             left: 20px;
-            z-index: 2;
+            z-index: 2; /* Ensure it stays above the overlay */
         }
 
         a.home-link:hover {
@@ -71,13 +53,22 @@
             color: #333;
         }
 
+        /* Style for the images to ensure they are proportionate */
         .post-image {
-            max-width: 80%;
+            max-width: 80%;  /* Adjusted to make the images smaller */
             height: auto;
             margin: 20px 0;
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        /* Style for the content section */
+        .post-content {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
         }
 
         /* Reference list section */
@@ -99,20 +90,53 @@
             font-size: 0.9em;
             background-color: #f1f1f1;
         }
+
+        /* Style for the "Return to Home" link */
+        .home-link {
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #007bff;
+            padding: 10px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the image captions */
+        figure {
+            text-align: center;
+            margin: 0;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header class="relative text-center">
-        <!-- Dark overlay for better legibility -->
-        <div class="overlay"></div>
+        <!-- Background overlay for better legibility -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
         <!-- Header Title -->
-        <h1>Reenactment of Heritage: Connecting Communities Through Folklore and Movement</h1>
+        <h1 class="text-4xl font-semibold text-white relative z-10">Reenactment of Heritage: Connecting Communities Through Folklore and Movement</h1>
         <!-- Return to Home link -->
-        <a href="index.html" class="home-link">Return to Homepage</a>
+        <a href="index.html" class="text-xl font-semibold text-white absolute top-4 left-4 hover:underline">Return to Home</a>
     </header>
     
     <section class="post-content">
-        <p>The Ar Scáth A Chéile project seeks to reenact folklore rooted in the ancient Irish oral tradition by bridging historical processes of knowledge transmission and documentation with contemporary, performative and community-driven participatory practices...</p>
+        <p>The Ar Scáth A Chéile project seeks to reenact folklore rooted in the ancient Irish oral tradition by bridging historical processes of knowledge transmission and documentation with contemporary, performative and community-driven participatory practices. Through reenactment of folklore, the project offers a way to negotiate the relationship between documentation and artistic production. Moreover, beyond techniques of “reconstruction” and “restoration” which tend to be fixated on the past, reenactment situates itself in the present and invites more affective and personal experiences for those involved.</p>
+
+        <p>The role of performative methods is becoming increasingly prominent in areas of historical research, educational strategies and public engagement. These methods are referred to as Reconstruction, Re-enactment, Replication and Reworking (RRR) across a wide range of academic fields. RRR draws attention to crucial questions relating to the construction of truth, historical accuracy, documentation practices and modes of facilitating communication of ideas with a broader public, underpinning historical and anthropological inquiry, conservation methods and creative work. In many cases of RRR, practitioners face the central issue of being unable to fully recreate the past, as our situatedness in the present time and place as well as our accumulated wealth of experience and memory will never be in alignment with earlier moments in history (Dupré et al., 2020, pp. 9–10). For example, any practice of RRR which deals with the Irish Oral Tradition must begin by recognising that the storyteller no longer occupies a formal role within Irish society, and the impossibility of a predominantly literate, globalised community encountering stories the same way as a community in the same locality would over a century ago. The choice of a specific “Re-term” in practice is often connected to reflections on temporalities and historicity of the subject.</p>
+
+        <p>“Reproduction” is often used in painting to describe the practice of copying an image to understand how it was created. “Reconstruction” is a more object-oriented term employed in conservation and restoration practice to draw attention not only to the means of production but the final product. “Reenactment” methodologies have gained increasing recognition in the field of anthropology as a mode of experimentation, as a way of exploring tensions between past and present realities, highlighting the synergy between ethnography and artistic research. Moving away from efforts to “bring the past to life”, re-enactment offers fertile sites for revitalising and negotiating concepts of tradition, heritage and cultural identity (Dupré et al., 2020, pp. 19–21). I chose reenactment as a mode of engaging with the documented folklore of Ireland to allow children to reflect upon the content and process of Irish storytelling and allow new meanings to emerge through creative experimentation.</p>
+
+        <p>In contrast to the established practice of historical reconstruction, reenactment offers a way of interpreting the past which acknowledges multiple temporalities, both past and present, involved in a work’s creation. Particularly when movement is involved, reenactment challenges the rigid relationship between time and space produced by linear textual narratives. As suggested by Rebecca Schneider in Performing Remains: Art and War in Times of Theatrical Reenactment (2011), the ontological status of performance must be reassessed and understood as something which also has an imprint on future cultural memory. Reenactment acknowledges that both the artists involved in creating a performance and audiences who encounter it will carry their own interpretation of the work in their memories, which opens up endless possibilities for its reemergence in new forms in the future (Franco and Chernetic, 2025). In this manner, shadow performance is not only a useful methodology for students to creatively engage with and reenact folklore, but a metaphor for the shadows these narratives cast upon our lives. The fluid, shape-shifting visuals produced in Ar Scáth a Chéile acknowledges the capacity of humans to make abstractions and produce meaning from symbols and images by drawing upon our existing conceptions of the world as we encounter it.</p>
 
         <!-- Reference List Section -->
         <section class="reference-list">
@@ -124,9 +148,9 @@
         </section>
     </section>
 
-    <footer class="bg-blue-900 text-white py-4 text-center">
+    <footer>
         <!-- Link to return to the homepage at the bottom -->
-        <a href="index.html" class="text-white hover:text-gray-300 transition duration-300">Return to Home</a>
+        <a href="index.html" class="home-link">Return to Homepage</a>
         <p>&copy; 2025 Ar Scáth A Chéile. All rights reserved.</p>
     </footer>
 </body>
