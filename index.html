@@ -17,50 +17,43 @@
     body {
       font-family: 'EB Garamond', serif;
     }
-
-   .fade-in {
-      animation: fadeIn 2s ease-out;
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
   </style>
 </head>
-<body class="text-white bg-cover bg-center" style="background-image: url('assets/photo-tunnel-shadow-1732316408848-248c95e52647.avi');">
+<body class="bg-green-50 text-green-900">
+
   <!-- Hero Section -->
-  <header class="relative flex flex-col justify-between px-6 py-10 text-white">
-    <div class="overlay"></div>
+  <header
+    class="relative h-screen bg-black text-white overflow-hidden"
+    style="background-image: url('assets/photo-tunnel-shadow-1732316408848-248c95e52647.avif'); background-size: cover; background-position: center;">
+    
+    <!-- Overlay for contrast -->
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
-    <!-- Top Right Heading -->
-    <div class="relative z-10 text-right">
-      <h2 class="text-lg md:text-2xl font-light">Performance of Heritage Project</h2>
-    </div>
+    <!-- Text content -->
+    <div class="relative z-10 flex flex-col justify-between h-full px-6 py-10">
+      <!-- Top right heading -->
+      <div class="text-right">
+        <h2 class="text-lg md:text-2xl font-light">Performance of Heritage Project</h2>
+      </div>
 
-    <!-- Centered Title -->
-    <div class="relative z-10 text-center mt-auto mb-auto">
-      <h1 class="text-4xl md:text-6xl font-bold fade-in shadow-lg">Ar Scáth A Chéile</h1>
-      <p class="mt-2 text-lg md:text-2xl italic opacity-90">/ar skɑː ə ˈçeːlʲə/</p>
-      <p class="mt-1 text-md md:text-xl opacity-80">In each other's shadow</p>
-    </div>
+      <!-- Main title centered -->
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Ar Scáth A Chéile</h1>
+        <h2 class="text-2xl md:text-3xl italic mb-2 opacity-90">/ar skɑː ə ˈçeːlʲə/</h2>
+        <h3 class="text-xl md:text-2xl italic opacity-80">"In the shadow of others"</h3>
+      </div>
 
-    <!-- Bottom Left Proverb -->
-    <div class="relative z-10 text-left max-w-md">
-      <blockquote class="italic text-lg md:text-xl mb-1">
-        "Ar Scáth A Chéile a Mhaireann na Daoine"
-      </blockquote>
-      <p class="italic text-md md:text-lg opacity-80">
-        "People live in each other's shadow."
-      </p>
+      <!-- Bottom left proverb + translation -->
+      <div class="text-left max-w-md">
+        <blockquote class="italic text-lg md:text-xl mb-1">
+          "Ar Scáth A Chéile a Mhaireann na Daoine" - Irish Proverb
+        </blockquote>
+        <p class="italic text-md md:text-lg opacity-80">
+          "It is in the shelter of each other that people survive."
+        </p>
+      </div>
     </div>
   </header>
-
 
  <!-- Framing Statement Section -->
  <section id="framing" class="py-20 px-6 md:px-10 bg-green-200 text-green-900">
