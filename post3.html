@@ -6,19 +6,58 @@
     <title>Reenactment of Heritage: Connecting Communities Through Folklore and Movement</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Header Section */
         header {
             background-image: url('assets/photo-tunnel-shadow-1732316408848-248c95e52647.avif');
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            height: 200px; /* Adjust height as needed */
+            height: 250px; /* Adjusted height for more space */
             color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 20px;
+            padding: 30px; /* Increased padding for better text positioning */
+            position: relative;
         }
+
+        /* Dark overlay for better contrast */
+        header .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: black;
+            opacity: 0.7; /* Increased opacity for better contrast */
+            z-index: 1; /* Ensure overlay stays under the text */
+        }
+
+        /* Header Title */
+        h1 {
+            font-size: 3rem; /* Adjusted size for better balance */
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for clarity */
+            z-index: 2; /* Ensure text is on top of the overlay */
+            color: #fff;
+        }
+
+        /* Return to Home Link */
+        a.home-link {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2; /* Ensure it stays above the overlay */
+        }
+
+        a.home-link:hover {
+            text-decoration: underline;
+        }
+
 
         .post-content {
             font-family: Arial, sans-serif;
